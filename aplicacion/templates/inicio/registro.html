@@ -1,0 +1,26 @@
+{% extends "mainpages/login-layout.html" %} {% block contenido %}
+<form method="post" class="the-form">
+  {% for field, errors in form.errors.items() %}
+  <div class="alert alert-danger">
+    {{ form[field].label }}: {{ ', '.join(errors) }}
+  </div>
+  {% endfor %}
+  {{ form.csrf_token }} 
+  {% if not perfil %}
+  {{form.username(placeholder="Usuario")}}
+  {% else %}
+  {{form.username(readonly="readonly", placeholder="Usuario")}}
+  {% endif %}
+  {{form.password(placeholder="Contraseña")}}
+  {{form.email(placeholder="Correo")}}
+  {{form.nombre(placeholder="Nombre Completo")}}
+    <p hidden>
+    {{form.admin(placeholder="Admin", readonly=readonly)}}
+    {{form.user_fi(placeholder="Fi", readonly=readonly)}}
+    {{form.leader_fi(placeholder="Fi", readonly=readonly)}}
+    {{form.user_am(placeholder="Am", readonly=readonly)}}
+    {{form.user_auditor(placeholder="Auditor", readonly=readonly)}}
+    </p>
+  {{form.submit}}
+</form>
+{% endblock %}

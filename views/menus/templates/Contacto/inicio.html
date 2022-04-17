@@ -1,0 +1,53 @@
+{% extends "mainpages/page-layout.html" %}
+{% block Titulo %}Vtesta | Contacto{% endblock %}
+{% block contenido %}
+  <header>
+    <div class="page-header min-vh-85">
+      <div>
+        <img class="position-absolute fixed-top ms-auto w-50 h-100 z-index-0 d-none d-sm-none d-md-block border-radius-section border-top-end-radius-0 border-top-start-radius-0 border-bottom-end-radius-0" 
+        src="{{url_for('static', filename='img/curved-images/curved8.jpg')}}" alt="image">
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 d-flex justify-content-center flex-column">
+            <div class="card d-flex blur justify-content-center p-4 shadow-lg my-sm-0 my-sm-6 mt-8 mb-5">
+              <div class="text-center">
+                <h3 class="text-gradient text-primary">Contactanos</h3>
+                <p class="mb-0">
+                  Nuestros expertos están disponibles para ti las 24 horas del día, los 7 días de la semana.
+                </p>
+              </div>
+              <form id="contact-form" method="post" autocomplete="off" action="{{url_for('menus.menu_inicio_contactanos')}}">
+                <div class="card-body pb-2">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>Nombre Completo</label>
+                      <div class="input-group mb-4">
+                        <input name="Nombre" class="form-control" placeholder="Nombre Apellido Completo" type="text" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6 ps-md-2">
+                      <label>Correo Electronico</label>
+                      <div class="input-group">
+                        <input name="Correo" type="email" class="form-control" placeholder="ejemplo@ejemplo.com" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-0 mt-md-0 mt-4">
+                    <label>En que podemos ayudarte?</label>
+                    <textarea name="Mensaje" class="form-control" id="message" rows="6" placeholder="Describe tu proyecto o duda aqui." required></textarea>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 text-center">
+                      <button type="submit" class="btn bg-gradient-primary mt-3 mb-0">Enviar Mensaje</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+{% endblock %}

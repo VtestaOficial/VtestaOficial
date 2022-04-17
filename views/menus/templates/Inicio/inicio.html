@@ -1,0 +1,366 @@
+{% extends "mainpages/page-layout.html" %}
+{% block Titulo %}Vtesta | Inicio{% endblock %}
+{% block contenido %}
+<!-- INICIO DE PAGINA -->
+<header>
+  <div class="page-header min-vh-85">
+    <div>
+      <img class="position-absolute fixed-top ms-auto w-50 h-100 z-index-0 d-none d-sm-none d-md-block border-radius-section border-top-end-radius-0 border-top-start-radius-0 border-bottom-end-radius-0" 
+      src="{{url_for('static', filename='img/curved-images/curved-6.jpg')}}" alt="image">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 d-flex">
+          <div class="card card-body blur text-md-start text-center px-sm-5 shadow-lg mt-sm-5 py-sm-5">
+            <h2 class="text-gradient text-primary mb-0">
+              <i>EL SISTEMA QUE NECESITAS</i>
+            </h2>
+            <h2 class="text-dark mb-4">Lo mejor para ti</h2>
+            <p class="lead text-dark pe-md-5 me-md-5">
+              Soluciones para dominios, ERP, CRM, servidores, alojamiento y páginas web.
+            </p>
+            <div class="buttons">
+              <button type="button" class="btn btn-rounded bg-gradient-primary mt-4">Contacto</button>
+              <button type="button" class="btn btn-rounded btn-outline-secondary mt-4 ms-2">Leer Mas</button>
+            </div>
+            <!-- <div class="row mt-2">
+              <div class="col-md-3 col-6 p-0">
+                <img class="w-100" src="{{url_for('static', filename='img/logos/gray-logos/logo-pinterest.svg')}}" alt="logo">
+              </div>
+              <div class="col-md-3 col-6 p-0">
+                <img class="w-100" src="{{url_for('static', filename='img/logos/gray-logos/logo-netflix.svg')}}" alt="logo">
+              </div>
+              <div class="col-md-3 col-6 p-0">
+                <img class="w-100" src="{{url_for('static', filename='img/logos/gray-logos/logo-coinbase.svg')}}" alt="logo">
+              </div>
+              <div class="col-md-3 col-6 p-0">
+                <img class="w-100" src="{{url_for('static', filename='img/logos/gray-logos/logo-nasa.svg')}}" alt="logo">
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- PRIMERA SECCION -->
+<section class="py-md-7 pb-5">
+  <div class="container">
+    <div class="row text-center">
+      <div class="row">
+        <div class="col-md-6 ms-auto me-auto text-center">
+          <h6 class="text-gradient text-primary">Aplicaciones que se adaptan a ti</h6>
+          <br>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="info">
+          <div class="icon icon-shape text-center">
+            <img src="{{url_for('static', filename='img/logos/iconos_inicio/cloud.png')}}" width="55" height="45">
+          </div>
+          <h5 class="mt-2">Hosting</h5>
+          <p>Espacio web y servidor web en la misma plataforma de hardware</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="info">
+          <div class="icon icon-shape text-center">
+            <img src="{{url_for('static', filename='img/logos/iconos_inicio/www.png')}}" width="55" height="45">
+          </div>
+          <h5 class="mt-2">Dominios</h5>
+          <p>Dominio gratis incluido en los planes de Vtesta.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="info">
+          <div class="icon icon-shape text-center">
+            <img src="{{url_for('static', filename='img/logos/iconos_inicio/vps.png')}}" width="55" height="45">
+          </div>
+          <h5 class="mt-2">VPS</h5>
+          <p>Centros de datos propios. Los estándares más altos en seguridad de datos.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="info">
+          <div class="icon icon-shape text-center">
+            <img src="{{url_for('static', filename='img/logos/iconos_inicio/web.png')}}" width="55" height="45">
+          </div>
+          <h5 class="mt-2">Aplicaciones Web</h5>
+          <p>Accede a tu web fácil y rápidamente.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- SEGUNDA SECCION -->
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 ms-auto me-auto text-center">
+        <h2 class="text-gradient text-primary">La prioridad eres tu</h2>
+        <p>
+          Trabajamos arduamente diseñando los sistemas que se adapten a ti y a tu empresa.
+        </p>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-6 position-relative">
+        <div class="position-relative ms-md-5 me-md-n5">
+          <div class="blur-shadow-image">
+            <img class="image-left rounded-3 img-fluid position-relative top-0 end-0 bg-cover" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/laptop.jpg" alt="image">
+          </div>
+        <div class="colored-shadow" style="background-image: url(&quot;https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/laptop.jpg&quot;);"></div></div>
+        <!-- Second image on the left side of the article -->
+        <div class="position-absolute bottom-0 mb-5 ms-n2 me-3 start-0 end-2 d-md-block d-none">
+          <div class="blur-shadow-image">
+            <img class="image-container rounded-3 img-fluid position-relative bg-cover" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/coding.jpg" alt="image">
+          </div>
+        <div class="colored-shadow" style="background-image: url(&quot;https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/coding.jpg&quot;);"></div></div>
+      </div>
+      <div class="col-md-5">
+        <!-- First image on the right side, above the article -->
+        <div class="position-relative ms-n4 mb-5 mt-8 d-md-block d-none">
+          <div class="blur-shadow-image">
+            <img class="image-right rounded-3 img-fluid position-relative bg-cover" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/tasks.jpg" alt="image">
+          </div>
+        <div class="colored-shadow" style="background-image: url(&quot;https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/tasks.jpg&quot;);"></div></div>
+        <h3 class="mb-4" align="center">El hosting ideal para tu proyecto web</h3>
+        <p align="justify">Contacta con tu nuestro personal de Vtesta a través del correo electrónico y te responderemos todas tus preguntas. Para cada duda o consulta que tengas, nuestro equipo de expertos está disponible.</p>
+        <p align="justify">
+          Ofrecemos nuestros servicios a autónomos que dan sus primeros pasos online, a dueños de negocios crecientes, a grandes empresas y a socios que les estén ayudando a alcanzar sus metas. No importa si estás construyendo 
+          tu presencia online comprando un dominio, si estás creando tu página web, trasladando procesos de back-office en el cloud u organizando un cluster de contenedores. 
+          Nuestro portafolio de productos te ofrece aplicaciones, servidores y servicios de calidad.
+        </p>
+        <p align="justify">Para nosotros, nuestros clientes son lo más importante. Por eso, ahora además de tener a tu disposición equipos de asistencia locales para ayudarte en cualquier momento.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- TERCERA SECCION -->
+<section class="bg-gradient-primary position-relative overflow-hidden">
+  <img src="../assets/img/shapes/waves-white.svg" alt="pattern-lines" class="position-absolute opacity-6">
+  <div class="position-absolute w-100 z-inde-1 top-0 mt-n3">
+    <svg width="100%" viewBox="0 -2 1920 157" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <title>wave-down</title>
+      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g fill="#FFFFFF" fill-rule="nonzero">
+          <g id="wave-down">
+            <path d="M0,60.8320331 C299.333333,115.127115 618.333333,111.165365 959,47.8320321 C1299.66667,-15.5013009 1620.66667,-15.2062179 1920,47.8320331 L1920,156.389409 L0,156.389409 L0,60.8320331 Z" id="Path-Copy-2" transform="translate(960.000000, 78.416017) rotate(180.000000) translate(-960.000000, -78.416017) "></path>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+  <div class="container py-lg-10 py-7">
+    <div class="row">
+      <div class="col-lg-6 d-flex justify-content-center flex-column">
+        <div id="carouselExampleIndicator" class="carousel slide py-7" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <h2 class="text-white mb-0">¿ QUIÉNES SOMOS ?</h2>
+            <hr class="text-white horizontal opacity-6 mb-4 mt-2 w-25 text-start">
+            <div class="carousel-item active">
+              <h6 class="text-white opacity-8 pe-5" align="justify">Somos una empresa especializada en servicios de consultoría y desarrollo de Tecnología de la información y procesos de negocio, nuestra prioridad simpre seras tú.</h6>
+              <h6 class="text-white opacity-8 pe-5" align="justify">Establecemos relaciones comerciales a largo plazo con nuestros clientes, brindándoles ideas innovadoras, recursos y soluciones para mejorar el rendimiento de su negocio, optimizar su trabajo y dar un nuevo impulso al rendimiento general.</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 justify-content-center flex-column d-sm-none d-md-none d-lg-flex d-xl-flex">
+        <div class="row justify-content-center d-none d-md-flex">
+          <div class="col-3 mb-4">
+            <div class="d-block bg-white avatar avatar-lg rounded-circle p-3 mt-n4 ms-8 fadeIn2 fadeInBottom">
+              <img src="{{url_for('static', filename='img/logos/iconos_inicio/erp.png')}}" width="40" height="30">
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="d-block bg-white avatar avatar-lg rounded-circle p-3 ms-8 mt-n6 fadeIn1 fadeInBottom">
+              <img src="{{url_for('static', filename='img/logos/iconos_inicio/vps.png')}}" width="40" height="30">
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="d-block bg-white avatar avatar-lg rounded-circle p-3 ms-6 mt-2 fadeIn3 fadeInBottom">
+              <img src="{{url_for('static', filename='img/logos/iconos_inicio/web.png')}}" width="40" height="30">
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-end d-none d-md-flex">
+          <div class="col-4 my-4">
+            <div class="d-block bg-white avatar avatar-lg rounded-circle p-3 ms-4 fadeIn1 fadeInBottom">
+              <img src="{{url_for('static', filename='img/logos/iconos_inicio/wordpress.png')}}" width="40" height="30">
+            </div>
+          </div>
+          <div class="col-3 my-4">
+            <div class="d-block bg-white avatar avatar-lg rounded-circle p-2 me-auto fadeIn1 fadeInBottom">
+              <img src="{{url_for('static', filename='img/logos/Vtesta_negro.svg')}}" width="45" height="35">
+            </div>
+          </div>
+          <div class="col-3 my-4">
+            <div class="d-block bg-white avatar avatar-lg rounded-circle p-3 fadeIn3 fadeInBottom ms-3 mt-3">
+              <img src="{{url_for('static', filename='img/logos/iconos_inicio/api.png')}}" width="40" height="30">
+            </div>
+          </div>
+        </div>
+        <div class="row d-none d-md-flex">
+          <div class="col-6">
+            <!-- Logo -->
+            <div class="d-block bg-white avatar avatar-lg rounded-circle p-3 ms-auto mt-5 fadeIn2 fadeInBottom">
+              <img src="{{url_for('static', filename='img/logos/iconos_inicio/cloud.png')}}" width="40" height="30">
+            </div>
+            <!-- End Logo -->
+          </div>
+          <div class="col-6 mt-6">
+            <!-- Logo -->
+            <div class="d-block bg-white avatar avatar-lg rounded-circle p-3 mx-auto mt-n3 fadeIn3 fadeInBottom">
+              <img src="{{url_for('static', filename='img/logos/iconos_inicio/www.png')}}" width="40" height="30">
+            </div>
+            <!-- End Logo -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="position-absolute w-100 bottom-0">
+    <svg width="100%" viewBox="0 -1 1920 166" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <title>wave-up</title>
+      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.000000, 5.000000)" fill="#FFFFFF" fill-rule="nonzero">
+          <g id="wave-up" transform="translate(0.000000, -5.000000)">
+            <path d="M0,70 C298.666667,105.333333 618.666667,95 960,39 C1301.33333,-17 1621.33333,-11.3333333 1920,56 L1920,165 L0,165 L0,70 Z"></path>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+</section>
+<!-- CUARTA SECCION -->
+<section class="py-7">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 ms-auto me-auto text-center">
+        <div class="p-3 info-hover-warning">
+          <div class="icon icon-shape bg-gradient-primary shadow icon-shape-circle text-primary">
+            <i class="fa fa-cogs" aria-hidden="true"></i>
+          </div>
+        </div>
+        <h3 class="text-gradient text-primary mb-0 mt-4">¿Por qué elegir Vtesta?</h3>
+        <br>
+        <p>Somos el aliado digital para soluciones desde dominios hasta infraestructuras cloud de alto nivel para pymes, autónomos y particulares.</p>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-4 ms-auto my-auto">
+        <div class="cursor-pointer">
+          <div class="card card-background tilt" data-tilt="">
+            <div class="full-background" style="background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/team-working.jpg')"></div>
+            <div class="card-body pt-7 text-center">
+              <div class="icon icon-lg up mb-3">
+                <svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <title>chart-pie-35</title>
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g transform="translate(-1720.000000, -742.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                            <g transform="translate(1716.000000, 291.000000)">
+                                <g transform="translate(4.000000, 451.000000)">
+                                    <path d="M21.6666667,18.3333333 L39.915,18.3333333 C39.11,8.635 31.365,0.89 21.6666667,0.085 L21.6666667,18.3333333 Z" opacity="0.602864583"></path>
+                                    <path d="M20.69,21.6666667 L7.09833333,35.2583333 C10.585,38.21 15.085,40 20,40 C30.465,40 39.0633333,31.915 39.915,21.6666667 L20.69,21.6666667 Z"></path>
+                                    <path d="M18.3333333,19.31 L18.3333333,0.085 C8.085,0.936666667 0,9.535 0,20 C0,24.915 1.79,29.415 4.74166667,32.9016667 L18.3333333,19.31 Z"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+              </div>
+              <h1 class="text-white up mb-0">Aliado Digital</h1>
+              <p class="lead up">Soluciones de Alto Nivel</p>
+              <button type="button" class="btn btn-white btn-lg mt-3 up">Get Started</button>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-md-5 me-auto my-auto ms-md-5">
+            <div class="p-3 info-horizontal d-flex">
+                <div>
+                    <h5>1. Productos de alto rendimiento</h5>
+                    <p>
+                      Desde simple dominios hasta la mejor infraestructura cloud, ofrecemos productos de alto rendimiento personalizados para tus necesidades.
+                    </p>
+                </div>
+            </div>
+            <div class="p-3 info-horizontal d-flex">
+                <div>
+                    <h5>2. Ofertas transparentes</h5>
+                    <p>
+                      ¡Sin letra pequeña! Toda la información y los precios se muestran de manera transparente antes de que realices tu pedido.
+                    </p>
+                </div>
+            </div>
+            <div class="p-3 info-horizontal d-flex">
+                <div>
+                    <h5>3. Flexibilidad total</h5>
+                    <p>
+                      Flexibilidad completa con contratos mensuales. Amplía y reduce tus planes en cualquier momento para ajustarlos a tus necesidades personales.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="dark my-md-6 mt-2 mx-7">
+    <div class="row">
+        <div class="col-md-5 ms-auto my-auto">
+            <div class="p-3 info-horizontal d-flex">
+                <div>
+                    <h5>1. Seguridad y protección</h5>
+                    <p>
+                      Nuestros centros de datos con el certificado ISO 27001 te aportan seguridad de datos, el mejor rendimiento y georredundancia.
+                    </p>
+                </div>
+            </div>
+            <div class="p-3 info-horizontal d-flex">
+                <div>
+                    <h5>2. Soporte Profesional</h5>
+                    <p>
+                      Un asistente personal estará siempre a tu disposición para ayudarte cuando lo necesites.
+                    </p>
+                </div>
+            </div>
+            <div class="p-3 info-horizontal d-flex">
+                <div>
+                    <h5>3. La mejor manera de comenzar en Internet</h5>
+                    <p>
+                      La base para una presencia profesional en Internet y para una comunicación seria con tus clientes y tus socios.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 me-auto my-auto ms-md-5">
+            <div class="cursor-pointer">
+                <div class="card card-background tilt" data-tilt="">
+                    <div class="full-background" style="background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/coffee-shop.jpg')"></div>
+                    <div class="card-body pt-7 text-center">
+                        <div class="icon icon-lg up mb-3">
+                            <svg width="40px" height="40px" viewBox="0 0 46 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>customer-support</title>
+                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g transform="translate(-1717.000000, -291.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                                        <g transform="translate(1716.000000, 291.000000)">
+                                            <g transform="translate(1.000000, 0.000000)">
+                                                <path d="M45,0 L26,0 C25.447,0 25,0.447 25,1 L25,20 C25,20.379 25.214,20.725 25.553,20.895 C25.694,20.965 25.848,21 26,21 C26.212,21 26.424,20.933 26.6,20.8 L34.333,15 L45,15 C45.553,15 46,14.553 46,14 L46,1 C46,0.447 45.553,0 45,0 Z" opacity="0.59858631"></path>
+                                                <path d="M22.883,32.86 C20.761,32.012 17.324,31 13,31 C8.676,31 5.239,32.012 3.116,32.86 C1.224,33.619 0,35.438 0,37.494 L0,41 C0,41.553 0.447,42 1,42 L25,42 C25.553,42 26,41.553 26,41 L26,37.494 C26,35.438 24.776,33.619 22.883,32.86 Z"></path>
+                                                <path d="M13,28 C17.432,28 21,22.529 21,18 C21,13.589 17.411,10 13,10 C8.589,10 5,13.589 5,18 C5,22.529 8.568,28 13,28 Z"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <h1 class="text-white up mb-0">Rendimiento Total</h1>
+                        <p class="lead up">Somos el aliado perfecto para el éxito digital</p>
+                        <button type="button" class="btn btn-white btn-lg mt-3 up">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

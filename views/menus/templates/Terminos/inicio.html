@@ -1,0 +1,71 @@
+{% extends "mainpages/page-layout.html" %}
+{% block Titulo %}Vtesta | T&C{% endblock %}
+{% block contenido %}
+  <section class="pt-3 pt-md-5 pb-md-5 pt-lg-7">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card shadow-lg mb-5">
+            <div class="card-header bg-gradient-primary p-5 position-relative">
+              <h3 class="text-white mb-0">Terminos &amp; Condiciones</h3>
+              <p class="text-white opacity-8 mb-4">Ultima Modificacion: Mar 14 2022</p>
+              <div class="position-absolute w-100 z-index-1 bottom-0 ms-n5">
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto" style="height:7vh;min-height:50px;">
+                  <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                  </defs>
+                  <g class="moving-waves">
+                    <use xlink:href="#gentle-wave" x="48" y="-1" fill="rgba(255,255,255,0.40"></use>
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.35)"></use>
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.25)"></use>
+                    <use xlink:href="#gentle-wave" x="48" y="8" fill="rgba(255,255,255,0.20)"></use>
+                    <use xlink:href="#gentle-wave" x="48" y="13" fill="rgba(255,255,255,0.15)"></use>
+                    <use xlink:href="#gentle-wave" x="48" y="16" fill="rgba(255,255,255,0.95"></use>
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <div class="card-body p-5">
+              <p>
+                {% for datos in resultados %}
+                  {% if datos.tipo == 'titulo' and datos.secuencia == 1 and datos.visible == 1 %}
+                    <h3>{{datos.texto}}</h3>
+                  {% endif %}
+                  {% if datos.tipo == 'contenido' and datos.secuencia == 1 and datos.visible == 1 %}
+                    <ul align="justify">
+                      <li>{{datos.texto}}</li>
+                    </ul>
+                  {% endif %}
+                  {% if datos.tipo == 'titulo' and datos.secuencia == 2 and datos.visible == 1 %}
+                    <h3>{{datos.texto}}</h3>
+                  {% endif %}
+                  {% if datos.tipo == 'contenido' and datos.secuencia == 2 and datos.visible == 1 %}
+                    <ul align="justify">
+                      <li>{{datos.texto}}</li>
+                    </ul>
+                  {% endif %}
+                  {% if datos.tipo == 'titulo' and datos.secuencia == 3 and datos.visible == 1 %}
+                    <h3>{{datos.texto}}</h3>
+                  {% endif %}
+                  {% if datos.tipo == 'contenido' and datos.secuencia == 3 and datos.visible == 1 %}
+                    <ul align="justify">
+                      <li>{{datos.texto}}</li>
+                    </ul>
+                  {% endif %}
+                  {% if datos.tipo == 'titulo' and datos.secuencia == 4 and datos.visible == 1 %}
+                    <h3>{{datos.texto}}</h3>
+                  {% endif %}
+                  {% if datos.tipo == 'contenido' and datos.secuencia == 4 and datos.visible == 1 %}
+                    <ul align="justify">
+                      <li>{{datos.texto}}</li>
+                    </ul>
+                  {% endif %}
+                {% endfor %}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

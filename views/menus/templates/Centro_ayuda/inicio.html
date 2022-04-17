@@ -1,0 +1,207 @@
+{% extends "mainpages/page-layout.html" %}
+{% block Titulo %}Vtesta | Centro de Ayuda{% endblock %}
+{% block contenido %}
+<header>
+  <div class="page-header min-vh-50" style="background-image: url(&quot;https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/curved-images/curved10.jpg&quot;); background-position-y: 50%;">
+    <span class="mask bg-gradient-dark"></span>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-white text-center">
+          <h2 class="text-white">Necesitas Ayuda?</h2>
+          <p class="lead">Aqui podras encontrar mas informacion sobre nuestros productos y servicios.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="position-relative overflow-hidden" style="height:36px;margin-top:-35px;">
+    <div class="w-full absolute bottom-0 start-0 end-0" style="transform: scale(2);transform-origin: top center;color: #f8f9fa;">
+      <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+      </svg>
+    </div>
+  </div>
+  <!-- <div class="container">
+    <div class="row bg-white shadow mt-n6 border-radius-md py-4 p-3 position-relative">
+      <div class="col-md-10 mb-md-0 mb-2">
+        <div class="input-group">
+          <span class="input-group-text"><i class="fas fa-search" aria-hidden="true"></i></span>
+          <input type="text" class="form-control" placeholder="Search for your answer">
+        </div>
+      </div>
+      <div class="col-md-2 ps-md-0">
+        <button type="button" class="btn bg-gradient-primary w-100 mb-0 h-100 position-relative z-index-2">Search</button>
+      </div>
+    </div>
+  </div> -->
+</header>
+
+<section class="py-lg-5">
+  <div class="container">
+    <div class="row mt-lg-5 mt-4">
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="card">
+          <div class="card-body border-radius-lg position-relative overflow-hidden pb-4 px-sm-5 ">
+            <img class="w-25 mb-3" src="{{ url_for('static', filename='img/logos/small-logos/logo-slack.svg') }}" alt="logo">
+            <h5 class="mt-2">Slack bot</h5>
+            <p class="mb-3">If everything I did failed - which it doesn't, it actually succeeds - just the fact that I'm willing to fail is an inspiration. People are so scared to lose that they don't even try. And this is sad.</p>
+            <a href="javascript:;" class="font-weight-bold text-xs text-uppercase font-weight-bolder text-info icon-move-right">
+              Check more
+              <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="card mb-3">
+          <div class="card-body border-radius-lg position-relative overflow-hidden pb-4 px-sm-5 ">
+            <img class="w-25 mb-3" src="{{ url_for('static', filename='img/logos/small-logos/logo-spotify.svg') }}" alt="logo">
+            <h5 class="mt-2">Looking great</h5>
+            <p class="mb-3">You have the opportunity to play this game of life you need to appreciate every moment. A lot of people don’t appreciate the moment until it’s motivating the doers.</p>
+            <a href="javascript:;" class="font-weight-bold text-xs text-uppercase font-weight-bolder text-success icon-move-right">
+              See details
+              <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="card mb-3">
+          <div class="card-body border-radius-lg position-relative overflow-hidden pb-4 px-sm-5 ">
+            <img class="w-25 mb-3" src="{{ url_for('static', filename='img/logos/small-logos/logo-asana.svg') }}" alt="logo">
+            <h5 class="mt-2">Developer First</h5>
+            <p class="mb-3">For standing out. But the time is now to be okay to be the greatest you. Would you believe in what you believe in, if you were the only one who believed it? What do you think?</p>
+            <a href="javascript:;" class="font-weight-bold text-xs text-uppercase font-weight-bolder text-warning icon-move-right">
+              View journey
+              <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="card mb-3">
+          <div class="card-body border-radius-lg position-relative overflow-hidden pb-4 px-sm-5 ">
+            <img class="w-25 mb-3" src="{{ url_for('static', filename='img/logos/small-logos/logo-invision.svg') }}" alt="logo">
+            <h5 class="mt-2">Prepare launch</h5>
+            <p class="mb-3">Society has put up so many boundaries, so many limitations on what’s right and wrong that it’s almost impossible to get a pure thought out. It’s like a little kid, a little boy.</p>
+            <a href="javascript:;" class="font-weight-bold text-xs text-uppercase font-weight-bolder text-dark icon-move-right">
+              Check out more
+              <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="card mb-3">
+          <div class="card-body border-radius-lg position-relative overflow-hidden pb-4 px-sm-5 ">
+            <img class="w-25 mb-3" src="{{ url_for('static', filename='img/logos/small-logos/logo-jira.svg') }}" alt="logo">
+            <h5 class="mt-2">Premium support</h5>
+            <p class="mb-3">Pink is obviously a better color. Everyone’s born confident, and everything’s taken away from you matters is the people who are sparked by it follow their dreams, too.</p>
+            <a href="javascript:;" class="font-weight-bold text-xs text-uppercase font-weight-bolder text-info icon-move-right">
+              See all
+              <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="card mb-3">
+          <div class="card-body border-radius-lg position-relative overflow-hidden pb-4 px-sm-5 ">
+            <img class="w-25 mb-3" src="{{ url_for('static', filename='img/logos/small-logos/logo-weave.svg') }}" alt="logo">
+            <h5 class="mt-2">Design tools</h5>
+            <p class="mb-3">Constantly growing. We’re constantly making mistakes. We’re constantly trying to express ourselves, find the meaning and actualize our dreams the position that we want to be.</p>
+            <a href="javascript:;" class="font-weight-bold text-xs text-uppercase font-weight-bolder text-danger icon-move-right">
+              Find story
+              <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="card mb-3">
+          <div class="card-body border-radius-lg position-relative overflow-hidden pb-4 px-sm-5 ">
+            <img class="w-25 mb-3" src="{{ url_for('static', filename='img/logos/small-logos/logo-invision.svg') }}" alt="logo">
+            <h5 class="mt-2">Prepare launch</h5>
+            <p class="mb-3">Society has put up so many boundaries, so many limitations on what’s right and wrong that it’s almost impossible to get a pure thought out. It’s like a little kid, a little boy.</p>
+            <a href="javascript:;" class="font-weight-bold text-xs text-uppercase font-weight-bolder text-dark icon-move-right">
+              Check out more
+              <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="card mb-3">
+          <div class="card-body border-radius-lg position-relative overflow-hidden pb-4 px-sm-5 ">
+            <img class="w-25 mb-3" src="{{ url_for('static', filename='img/logos/small-logos/logo-jira.svg') }}" alt="logo">
+            <h5 class="mt-2">Premium support</h5>
+            <p class="mb-3">Pink is obviously a better color. Everyone’s born confident, and everything’s taken away from you matters is the people who are sparked by it follow their dreams, too.</p>
+            <a href="javascript:;" class="font-weight-bold text-xs text-uppercase font-weight-bolder text-info icon-move-right">
+              See all
+              <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="card mb-3">
+          <div class="card-body border-radius-lg position-relative overflow-hidden pb-4 px-sm-5 ">
+            <img class="w-25 mb-3" src="{{ url_for('static', filename='img/logos/small-logos/logo-weave.svg') }}" alt="logo">
+            <h5 class="mt-2">Design tools</h5>
+            <p class="mb-3">Constantly growing. We’re constantly making mistakes. We’re constantly trying to express ourselves, find the meaning and actualize our dreams the position that we want to be.</p>
+            <a href="javascript:;" class="font-weight-bold text-xs text-uppercase font-weight-bolder text-danger icon-move-right">
+              Find story
+              <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-8 mx-auto text-center">
+        <div class="ms-3 mb-md-5">
+          <h2>Si no encuentras la respuesta</h2>
+          <p class="lead">Puedes contactarnos para obtener ayuda de nuestros productos / servicios.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <div class="card card-plain">
+          <form id="contact-form" method="post" autocomplete="off" action="{{url_for('menus.menu_inicio_contactanos')}}">
+            <div class="card-body pb-2">
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Nombre Completo</label>
+                  <div class="input-group mb-4">
+                    <input name="Nombre" class="form-control" placeholder="Nombre Apellido Completo" type="text" required>
+                  </div>
+                </div>
+                <div class="col-md-6 ps-md-2">
+                  <label>Correo Electronico</label>
+                  <div class="input-group">
+                    <input name="Correo" type="email" class="form-control" placeholder="ejemplo@ejemplo.com" required>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group mb-0 mt-md-0 mt-4">
+                <label>En que podemos ayudarte?</label>
+                <textarea name="Mensaje" class="form-control" id="message" rows="6" placeholder="Describe tu proyecto o duda aqui." required></textarea>
+              </div>
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <button type="submit" class="btn bg-gradient-primary mt-3 mb-0">Enviar Mensaje</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,8 @@
+Flask
+Flask-WTF
+Flask-Sqlalchemy
+Flask-Login
+#pip3 install WTForms==2.3.3
+fastapi
+uvicorn
+# pip3 install flask flask_restful flask_sqlalchemy flask_migrate flask_marshmallow marshmallow-sqlalchemy
