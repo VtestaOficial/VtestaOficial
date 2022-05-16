@@ -1,0 +1,196 @@
+{% extends "mainpages/page-layout.html" %}
+{% block Titulo %}Vtesta | Nosotros{% endblock %}
+{% block contenido %}
+<!-- INICIO DE PAGINA -->
+<br>
+<br>
+<br>
+<section class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mx-auto text-center">
+        <h2 class="text-gradient text-vtesta mb-5">Acerca de Nosotros</h2>
+        <p>Somos una empresa especializada en servicios de consultoría y desarrollo de Tecnología de la información y procesos de negocio</p>
+      </div>
+    </div>
+    <div class="row mt-6" hidden>
+      <div class="col-lg-4 col-md-8">
+        <div class="card card-plain">
+          <div class="card-body">
+            <div class="author">
+              <img src="../../assets/img/team-3.jpg" alt="..." class="avatar shadow">
+              <div class="name ps-2">
+                <span>Mathew Glock</span>
+                <div class="stats">
+                  <small><i class="far fa-clock"></i> 5 min read</small>
+                </div>
+              </div>
+            </div>
+            <p class="mt-4">"If you have the opportunity to play this game of life you need to appreciate every moment."</p>
+            <div class="rating mt-3">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-8 ms-md-auto">
+        <div class="card bg-gradient-primary">
+          <div class="card-body">
+            <div class="author align-items-center">
+              <img src="../../assets/img/marie.jpg" alt="..." class="avatar shadow">
+              <div class="name ps-2">
+                <span class="text-white">Mathew Glock</span>
+                <div class="stats">
+                  <small class="text-white">Posted on 28 February</small>
+                </div>
+              </div>
+            </div>
+            <p class="mt-4 text-white">"If you have the opportunity to play this game of life you need to appreciate every moment."</p>
+            <div class="rating mt-3">
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="far fa-star text-white"></i>
+              <i class="far fa-star text-white"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-8">
+        <div class="card card-plain">
+          <div class="card-body">
+            <div class="author">
+              <img src="../../assets/img/team-2.jpg" alt="..." class="avatar shadow">
+              <div class="name ps-2">
+                <span>Mathew Glock</span>
+                <div class="stats">
+                  <small><i class="far fa-clock"></i> 5 min read</small>
+                </div>
+              </div>
+            </div>
+            <p class="mt-4">"If you have the opportunity to play this game of life you need to appreciate every moment."</p>
+            <div class="rating mt-3">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- TERCERA SECCION -->
+<section class="bg-gradient-vtesta position-relative overflow-hidden">
+  <img src="{{url_for('static', filename='img/shapes/waves-white.svg')}}" alt="pattern-lines" class="position-absolute opacity-6">
+  <div class="position-absolute w-100 z-inde-1 top-0 mt-n3">
+    <svg width="100%" viewBox="0 -2 1920 157" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <title>wave-down</title>
+      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g fill="#FFFFFF" fill-rule="nonzero">
+          <g id="wave-down">
+            <path d="M0,60.8320331 C299.333333,115.127115 618.333333,111.165365 959,47.8320321 C1299.66667,-15.5013009 1620.66667,-15.2062179 1920,47.8320331 L1920,156.389409 L0,156.389409 L0,60.8320331 Z" id="Path-Copy-2" transform="translate(960.000000, 78.416017) rotate(180.000000) translate(-960.000000, -78.416017) "></path>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+  <div class="container py-lg-10 py-5">
+    <div class="row">
+      <div class="col-lg-12 d-flex justify-content-center flex-column">
+        <div id="carouselExampleIndicator" class="carousel slide py-7" data-bs-ride="carousel">
+          <div class="carousel-inner" align="center">
+            <h2 class="text-white mb-2"><b><i>Nuetra Misión</i></b></h2>
+            <div class="carousel-item active">
+              <h6 class="text-white  pe-5">
+                Facilitar servicios que brinden un valor agregado para tu empresa, aplicando metodologías internacionales y los más altos estándares disponibles.
+              </h6>
+            </div>
+          </div>
+          <br>
+          <div class="carousel-inner" align="center">
+            <h2 class="text-white mb-2"><b><i>Nuetra Visión </i></b></h2>
+            <div class="carousel-item active">
+              <h6 class="text-white  pe-5">
+                Ser la compañía más centrada en el cliente, donde nuestros clientes puedan encontrar apta para sus necesidades.
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="position-absolute w-100 z-index-1 bottom-0">
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+      <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+      </defs>
+      <g class="moving-waves">
+        <use xlink:href="#gentle-wave" x="48" y="-1" fill="rgba(255,255,255,0.40"></use>
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.35)"></use>
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.25)"></use>
+        <use xlink:href="#gentle-wave" x="48" y="8" fill="rgba(255,255,255,0.20)"></use>
+        <use xlink:href="#gentle-wave" x="48" y="13" fill="rgba(255,255,255,0.15)"></use>
+        <use xlink:href="#gentle-wave" x="48" y="16" fill="rgba(255,255,255,1"></use>
+      </g>
+    </svg>
+  </div>
+</section>
+<!-- CUARTA SECCION -->
+<section class="py-4">
+  <div class="container">
+    <div class="row my-5">
+      <div class="col-md-6 mx-auto text-center">
+        <h2>Preguntas Frecuentes</h2>
+        <p>A lot of people don&#39;t appreciate the moment until it’s passed. I&#39;m not trying my hardest, and I&#39;m not trying to do </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-10 mx-auto">
+        <div class="accordion" id="accordionRental">
+          {% for dato in resultados %}
+          {% if dato.orden == 1 %}
+          <div class="accordion-item mb-3">
+            <h5 class="accordion-header" id="headingOne">
+              <button class="accordion-button border-bottom font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne{{dato.orden}}" aria-expanded="true" aria-controls="collapseOne">
+                {{dato.titulo}}
+                <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3"></i>
+                <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3"></i>
+              </button>
+            </h5>
+            <div id="collapseOne{{dato.orden}}" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionRental">
+              <div class="accordion-body text-sm opacity-8">
+                {{dato.contenido}}
+              </div>
+            </div>
+          </div>
+          {% endif %}
+          {% if dato.orden != 1 %}
+          <div class="accordion-item mb-3">
+            <h5 class="accordion-header" id="headingOne">
+              <button class="accordion-button border-bottom font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne{{dato.orden}}" aria-expanded="true" aria-controls="collapseOne">
+                {{dato.titulo}}
+                <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3"></i>
+                <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3"></i>
+              </button>
+            </h5>
+            <div id="collapseOne{{dato.orden}}" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionRental">
+              <div class="accordion-body text-sm opacity-8">
+                {{dato.contenido}}
+              </div>
+            </div>
+          </div>
+          {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

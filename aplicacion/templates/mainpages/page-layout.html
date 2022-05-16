@@ -24,6 +24,7 @@
           padding: 50px;
         }
       </style>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body>
     <div id="preloader"></div>
@@ -50,7 +51,7 @@
                             <div class="col-4 position-relative">
                               <div class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center px-0">
                                 <div class="d-inline-block">
-                                  <div class="icon icon-shape icon-xs border-radius-md bg-gradient-primary text-center me-2 d-flex align-items-center justify-content-center">
+                                  <div class="icon icon-shape icon-xs border-radius-md bg-gradient-vtesta text-center me-2 d-flex align-items-center justify-content-center">
                                     <svg width="12px" height="12px" viewBox="0 0 45 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                       <title>shop </title>
                                       <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -75,14 +76,14 @@
                                 <span class="ps-3">Prestashop</span>
                               </a>
                               <a href="#!" class="dropdown-item border-radius-md">
-                                <span class="ps-3">Foros<span class="badge badge-sm bg-gradient-dark ms-1">NUEVO</span></span>
+                                <span class="ps-3">Foros<span class="badge badge-sm bg-gradient-vtesta ms-1">NUEVO</span></span>
                               </a>
                               <hr class="vertical dark">
                             </div>
                             <div class="col-4 position-relative">
                               <div class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center px-0">
                                 <div class="d-inline-block">
-                                  <div class="icon icon-shape icon-xs border-radius-md bg-gradient-primary text-center me-2 d-flex align-items-center justify-content-center ps-0">
+                                  <div class="icon icon-shape icon-xs border-radius-md bg-gradient-vtesta text-center me-2 d-flex align-items-center justify-content-center ps-0">
                                     <svg width="12px" height="12px" viewBox="0 0 46 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                       <title>customer-support</title>
                                       <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -101,13 +102,13 @@
                                 </div>
                                 Soporte
                               </div>
-                              <a href="#!" class="dropdown-item border-radius-md">
+                              <a href="{{url_for('menus.menu_inicio_centro_de_ayuda')}}" class="dropdown-item border-radius-md">
                                 <span class="ps-3">Centro de Ayuda</span>
                               </a>
-                              <a href="#!" class="dropdown-item border-radius-md">
+                              <a href="{{url_for('menus.menu_inicio_nosotros')}}" class="dropdown-item border-radius-md">
                                 <span class="ps-3">Informacion Basica</span>
                               </a>
-                              <a href="#!" class="dropdown-item border-radius-md">
+                              <a href="{{url_for('menus.menu_inicio_nosotros')}}" class="dropdown-item border-radius-md">
                                 <span class="ps-3">FAQ</span>
                               </a>
                               <hr class="vertical dark">
@@ -115,7 +116,7 @@
                             <div class="col-4">
                               <div class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center px-0">
                                 <div class="d-inline-block">
-                                  <div class="icon icon-shape icon-xs border-radius-md bg-gradient-primary text-center me-2 d-flex align-items-center justify-content-center ps-0">
+                                  <div class="icon icon-shape icon-xs border-radius-md bg-gradient-vtesta text-center me-2 d-flex align-items-center justify-content-center ps-0">
                                     <svg width="12px" height="12px" viewBox="0 0 40 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                       <title>document</title>
                                       <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -160,7 +161,7 @@
                             <div class="col-4 position-relative">
                               <div class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center mt-3 px-0">
                                 <div class="d-inline-block">
-                                  <div class="icon icon-shape icon-xs border-radius-md bg-gradient-primary text-center me-2 d-flex align-items-center justify-content-center ps-0">
+                                  <div class="icon icon-shape icon-xs border-radius-md bg-gradient-vtesta text-center me-2 d-flex align-items-center justify-content-center ps-0">
                                     <svg width="12px" height="12px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                       <title>box-3d-50</title>
                                       <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -193,7 +194,7 @@
                             <div class="col-4">
                               <div class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center mt-3 px-0">
                                 <div class="d-inline-block">
-                                  <div class="icon icon-shape icon-xs border-radius-md bg-gradient-primary text-center me-2 d-flex align-items-center justify-content-center ps-0">
+                                  <div class="icon icon-shape icon-xs border-radius-md bg-gradient-vtesta text-center me-2 d-flex align-items-center justify-content-center ps-0">
                                     <svg class="" width="12px" height="20px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                       <title>spaceship</title>
                                       <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -214,22 +215,22 @@
                                 Soluciones Vtesta
                               </div>
                               <a href="#!" class="dropdown-item border-radius-md">
-                                <span class="ps-3">Soluciones QR<span class="badge badge-sm bg-gradient-primary ms-1">NUEVO</span></span>
+                                <span class="ps-3">Soluciones QR<span class="badge badge-sm bg-gradient-vtesta ms-1">NUEVO</span></span>
                               </a>
                               <a href="#!" class="dropdown-item border-radius-md">
-                                <span class="ps-3">Soluciones SQL<span class="badge badge-sm bg-gradient-primary ms-1">NUEVO</span></span>
+                                <span class="ps-3">Soluciones SQL<span class="badge badge-sm bg-gradient-vtesta ms-1">NUEVO</span></span>
                               </a>
                               <a href="javascript:;" class="dropdown-item border-radius-md">
-                                <span class="ps-3">Soluciones API<span class="badge badge-sm bg-gradient-primary ms-1">NUEVO</span></span>
+                                <span class="ps-3">Soluciones API<span class="badge badge-sm bg-gradient-vtesta ms-1">NUEVO</span></span>
                               </a>
                               <a href="javascript:;" class="dropdown-item border-radius-md">
-                                <span class="ps-3">MockServer<span class="badge badge-sm bg-gradient-primary ms-1">NUEVO</span></span>
+                                <span class="ps-3">MockServer<span class="badge badge-sm bg-gradient-vtesta ms-1">NUEVO</span></span>
                               </a>
                             </div>
                             <div class="col-4">
                               <div class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0 mt-3">
                                 <div class="d-inline-block">
-                                  <div class="icon icon-shape icon-xs border-radius-md bg-gradient-primary text-center me-2 d-flex align-items-center justify-content-center ps-0">
+                                  <div class="icon icon-shape icon-xs border-radius-md bg-gradient-vtesta text-center me-2 d-flex align-items-center justify-content-center ps-0">
                                     <svg width="12px" height="12px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                       <title>office</title>
                                       <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -270,11 +271,11 @@
                     <div class="dropdown-menu dropdown-menu-animation dropdown-lg border-radius-xl p-3 mt-0 mt-lg-3" aria-labelledby="dropdownMenuAccount">
                       <div class="row d-none d-lg-flex">
                         <div class="col-6">
-                          <div class="py-6 h-100 w-100 d-flex border-radius-lg position-relative dropdown-image" style="background-image:url('{{url_for('static', filename='img/curved-images/curved8.jpg')}}')"> 
-                            <div class="mask bg-gradient-primary border-radius-lg"></div>
+                          <div class="py-6 h-100 w-100 d-flex border-radius-lg position-relative dropdown-image" style="background-image:url('{{url_for('static', filename='img/curved-images/fondo-inicio.jpg')}}')"> 
+                            <div class="mask bg-gradient-vtesta border-radius-lg"></div>
                             <div class="d-flex justify-content-center align-items-center text-center text-white font-weight-bold w-100 z-index-1 flex-column">
                               <div class="icon icon-shape rounded-circle bg-white shadow text-center">
-                                <i class="ni ni-diamond text-primary text-gradient text-lg" aria-hidden="true"></i>
+                                <i class="ni ni-diamond text-vtesta text-gradient text-lg" aria-hidden="true"></i>
                               </div>
                               <span class="text-lg mt-2">Maneja tu<br>Cuenta</span>
                             </div>
@@ -288,7 +289,7 @@
                                 <img src="{{url_for('static', filename='img/down-arrow.svg')}}" alt="down-arrow" class="arrow">
                               </a>
                             </li>
-                            <li class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0">
+                            <li class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0" hidden>
                               <a class="dropdown-item border-radius-md ps-3 d-flex align-items-center justify-content-between mb-1" id="dropdownPasswordReset">
                                 <span>Password Reset</span>
                                 <img src="{{url_for('static', filename='img/down-arrow.svg')}}" alt="down-arrow" class="arrow">
@@ -305,7 +306,7 @@
                                 </a>
                               </div>
                             </li>
-                            <li class="nav-item list-group-item border-0 p-0">
+                            <li class="nav-item list-group-item border-0 p-0" hidden>
                               <a href="#!" class="dropdown-item border-radius-md ps-3 d-flex align-items-center justify-content-between mb-1">
                                 <span>Seguridad 2FA</span>
                               </a>
@@ -318,7 +319,8 @@
                 </ul>
                 <ul class="navbar-nav d-lg-block d-none">
                   <li class="nav-item">
-                    <a href="{{url_for('menus.menu_inicio_contactanos')}}" class="btn btn-sm  bg-gradient-primary  btn-round mb-0 me-1" onclick="smoothToPricing('pricing-soft-ui')">Contactanos</a>
+                    <a href="{{url_for('menus.menu_inicio_contactanos')}}" class="btn btn-sm  bg-gradient-vtesta  btn-round mb-0 me-1" style="color: white;"
+                    onclick="smoothToPricing('pricing-soft-ui')">Contactanos</a>
                   </li>
                 </ul>
               </div>
@@ -338,21 +340,21 @@
               <img src="{{url_for('static', filename='img/logos/Vtesta_negro.svg')}}" alt="Girl in a jacket" width="70" height="80">
             </div>
             <div>
-              <h6 class="mt-3 mb-2 opacity-8">Redes Sociales</h6>
+              <h6 class="mt-3 mb-2 opacity-8 text-vtesta"><b>Redes Sociales</b></h6>
               <ul class="d-flex flex-row ms-n3 nav">
                 <li class="nav-item">
-                  <a class="nav-link pe-1" href="#!" target="_blank">
-                    <i class="fab fa-facebook text-lg opacity-8" aria-hidden="true"></i>
+                  <a class="nav-link pe-1" href="https://www.facebook.com/VtestaOficial/" target="_blank">
+                    <i class="fab fa-facebook text-lg opacity-8 text-vtesta" aria-hidden="true"></i>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link pe-1" href="#!" target="_blank">
-                    <i class="fab fa-dribbble text-lg opacity-8" aria-hidden="true"></i>
+                  <a class="nav-link pe-1" href="https://vtesta.info/" target="_blank">
+                    <i class="fab fa-dribbble text-lg opacity-8 text-vtesta" aria-hidden="true"></i>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link pe-1" href="#!" target="_blank">
-                    <i class="fab fa-instagram text-lg opacity-8" aria-hidden="true"></i>
+                  <a class="nav-link pe-1" href="https://www.instagram.com/vtesta_oficial/" target="_blank">
+                    <i class="fab fa-instagram text-lg opacity-8 text-vtesta" aria-hidden="true"></i>
                   </a>
                 </li>
               </ul>
@@ -360,25 +362,25 @@
           </div>
           <div class="col-md-2 col-sm-6 col-6 mb-4">
             <div>
-              <h6 class="text-gradient text-primary text-sm">Vtesta</h6>
+              <h6 class="text-gradient text-vtesta text-sm">Vtesta</h6>
               <ul class="flex-column ms-n3 nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="#" target="_blank">
+                  <a class="nav-link" href="{{url_for('menus.menu_inicio_nosotros')}}">
                     Acerca de Nosotros
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#" target="_blank">
+                  <a class="nav-link" href="#!">
                     Nuestros Servicios
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#" target="_blank">
+                  <a class="nav-link" href="#!">
                     Herramientas Premium
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#" target="_blank">
+                  <a class="nav-link" href="#!">
                     Blog
                   </a>
                 </li>
@@ -387,20 +389,20 @@
           </div>
           <div class="col-md-2 col-sm-6 col-6 mb-4">
             <div>
-              <h6 class="text-gradient text-primary text-sm">Recursos</h6>
+              <h6 class="text-gradient text-vtesta text-sm">Recursos</h6>
               <ul class="flex-column ms-n3 nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="#" target="_blank">
+                  <a class="nav-link" href="#!">
                     Ilustraciones
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#" target="_blank">
+                  <a class="nav-link" href="#!">
                     Inversiones
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#" target="_blank">
+                  <a class="nav-link" href="#!">
                     Programa de Afiliación
                   </a>
                 </li>
@@ -409,7 +411,7 @@
           </div>
           <div class="col-md-2 col-sm-6 col-6 mb-4">
             <div>
-              <h6 class="text-gradient text-primary text-sm">Ayuda & Soporte</h6>
+              <h6 class="text-gradient text-vtesta text-sm">Ayuda & Soporte</h6>
               <ul class="flex-column ms-n3 nav">
                 <li class="nav-item">
                   <a class="nav-link" href="{{url_for('menus.menu_inicio_contactanos')}}">
@@ -427,7 +429,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#" target="_blank">
+                  <a class="nav-link" href="#!">
                     Sponsors
                   </a>
                 </li>
@@ -436,7 +438,7 @@
           </div>
           <div class="col-md-2 col-sm-6 col-6 mb-4 me-auto">
             <div>
-              <h6 class="text-gradient text-primary text-sm">Legal</h6>
+              <h6 class="text-gradient text-vtesta text-sm">Legal</h6>
               <ul class="flex-column ms-n3 nav">
                 <li class="nav-item">
                   <a class="nav-link" href="{{url_for('menus.menu_inicio_terminos_y_condiciones')}}">
@@ -449,7 +451,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#!" target="_blank">
+                  <a class="nav-link" href="#!">
                     Estado del Servicio
                   </a>
                 </li>
@@ -461,7 +463,7 @@
               <p class="my-4 text-sm">
                 All rights reserved. Copyright © <script>
                   document.write(new Date().getFullYear())
-                </script> System by <a href="#!" target="_blank">Vtesta</a>.
+                </script> System by <a href="#Headers">Vtesta</a>.
               </p>
             </div>
           </div>

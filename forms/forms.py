@@ -25,3 +25,10 @@ class FormUsuario(FlaskForm):
     user_am =  SelectField("AM", choices=[("0", "No"),("1", "Si")], default="No")
     user_auditor =  SelectField("Auditor", choices=[("0", "No"),("1", "Si")], default="No")
     submit = SubmitField('Aceptar')
+
+class ContactForm(FlaskForm):
+  nombre = StringField("Nombre Completo", validators=[Required('Porfavor introduce tu Nombre')])
+  correo = StringField("Correo", validators=[Required('Porfavor introduce tu Correo')])
+  asunto = StringField("Asunto", validators=[Required('Porfavor introduce tu Asunto')])
+  mensaje = TextAreaField("Mensaje", validators=[Required('Porfavor introduce tu Mensaje')])
+  enviar = SubmitField("Enviar")

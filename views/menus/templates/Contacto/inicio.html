@@ -12,34 +12,36 @@
           <div class="col-lg-7 d-flex justify-content-center flex-column">
             <div class="card d-flex blur justify-content-center p-4 shadow-lg my-sm-0 my-sm-6 mt-8 mb-5">
               <div class="text-center">
-                <h3 class="text-gradient text-primary">Contactanos</h3>
+                <h3 class="text-gradient text-vtesta">Contactanos</h3>
                 <p class="mb-0">
                   Nuestros expertos están disponibles para ti las 24 horas del día, los 7 días de la semana.
                 </p>
               </div>
-              <form id="contact-form" method="post" autocomplete="off" action="{{url_for('menus.menu_inicio_contactanos')}}">
+              <form method="post" autocomplete="off" action="{{url_for('menus.menu_inicio_contactanos')}}">
+                {{form.csrf_token}}
                 <div class="card-body pb-2">
                   <div class="row">
                     <div class="col-md-6">
                       <label>Nombre Completo</label>
                       <div class="input-group mb-4">
-                        <input name="Nombre" class="form-control" placeholder="Nombre Apellido Completo" type="text" required>
+                        {{form.nombre(class="form-control", placeholder="Nombre Apellido Completo")}}
                       </div>
                     </div>
                     <div class="col-md-6 ps-md-2">
                       <label>Correo Electronico</label>
                       <div class="input-group">
-                        <input name="Correo" type="email" class="form-control" placeholder="ejemplo@ejemplo.com" required>
+                        {{form.correo(class="form-control", placeholder="ejemplo@ejemplo.com")}}
                       </div>
                     </div>
                   </div>
                   <div class="form-group mb-0 mt-md-0 mt-4">
                     <label>En que podemos ayudarte?</label>
-                    <textarea name="Mensaje" class="form-control" id="message" rows="6" placeholder="Describe tu proyecto o duda aqui." required></textarea>
+                    {{form.mensaje(class="form-control", placeholder="Describe tu proyecto o duda aqui.")}}
                   </div>
+                  <div class="g-recaptcha" data-sitekey="{{sitekey}}" data-callback="correctCaptcha" align = "center" ></div>
                   <div class="row">
                     <div class="col-md-12 text-center">
-                      <button type="submit" class="btn bg-gradient-primary mt-3 mb-0">Enviar Mensaje</button>
+                      {{ form.enviar(class="btn bg-gradient-vtesta mt-3 mb-0 text-white", value="Enviar Mensaje")}}
                     </div>
                   </div>
                 </div>

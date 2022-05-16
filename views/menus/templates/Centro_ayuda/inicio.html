@@ -173,31 +173,33 @@
       <div class="col-lg-8 mx-auto">
         <div class="card card-plain">
           <form id="contact-form" method="post" autocomplete="off" action="{{url_for('menus.menu_inicio_contactanos')}}">
-            <div class="card-body pb-2">
-              <div class="row">
-                <div class="col-md-6">
-                  <label>Nombre Completo</label>
-                  <div class="input-group mb-4">
-                    <input name="Nombre" class="form-control" placeholder="Nombre Apellido Completo" type="text" required>
+            {{form.csrf_token}}
+                <div class="card-body pb-2">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>Nombre Completo</label>
+                      <div class="input-group mb-4">
+                        {{form.nombre(class="form-control", placeholder="Nombre Apellido Completo")}}
+                      </div>
+                    </div>
+                    <div class="col-md-6 ps-md-2">
+                      <label>Correo Electronico</label>
+                      <div class="input-group">
+                        {{form.correo(class="form-control", placeholder="ejemplo@ejemplo.com")}}
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-0 mt-md-0 mt-4">
+                    <label>En que podemos ayudarte?</label>
+                    {{form.mensaje(class="form-control", placeholder="Describe tu proyecto o duda aqui.")}}
+                  </div>
+                  <div class="g-recaptcha" data-sitekey="{{sitekey}}" data-callback="correctCaptcha" align = "center" ></div>
+                  <div class="row">
+                    <div class="col-md-12 text-center">
+                      {{ form.enviar(class="btn bg-gradient-vtesta mt-3 mb-0 text-white", value="Enviar Mensaje")}}
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-6 ps-md-2">
-                  <label>Correo Electronico</label>
-                  <div class="input-group">
-                    <input name="Correo" type="email" class="form-control" placeholder="ejemplo@ejemplo.com" required>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group mb-0 mt-md-0 mt-4">
-                <label>En que podemos ayudarte?</label>
-                <textarea name="Mensaje" class="form-control" id="message" rows="6" placeholder="Describe tu proyecto o duda aqui." required></textarea>
-              </div>
-              <div class="row">
-                <div class="col-md-12 text-center">
-                  <button type="submit" class="btn bg-gradient-primary mt-3 mb-0">Enviar Mensaje</button>
-                </div>
-              </div>
-            </div>
           </form>
         </div>
       </div>

@@ -5,6 +5,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import engine
 from sqlalchemy.sql import func, text
 import os
+import requests, json
     # CORREOS
 import smtplib
 from flask_mail import Message, Mail
@@ -22,19 +23,26 @@ menus = Blueprint('menus', __name__, template_folder='templates', static_folder=
 def menu_inicio():
     return render_template("Inicio/inicio.html")
 
+@menus.route('/acerca_de_nosotros', methods=['GET', 'POST'])
+def menu_inicio_nosotros():
+    from models.models import db
+    resultados = db.engine.execute(text("SELECT * FROM preguntas_frecuentes"))
+    return render_template("Nosotros/inicio.html", resultados=resultados)
+
 @menus.route('/contactanos', methods=['GET', 'POST'])
 def menu_inicio_contactanos():
+    form = ContactForm()
     if request.method == 'POST':
-        Nombre = request.form['Nombre']
-        Correo = request.form['Correo']
-        Mensaje = request.form['Mensaje']
+        Nombre = form.nombre.data
+        Correo = form.correo.data
+        Mensaje = form.mensaje.data
         #ENVIO DE CORREO A NOTIFICACIONES
         msg = Message(Nombre, sender='contacto@vtesta.info', recipients=['ivannaje15@gmail.com'])
         msg.html = """
               <h2>
-              El Cliente: %s </br>
-              Con el Correo: %s </br>
-              Nos manda el Mensaje: %s </br>
+              El Cliente: %s <br>
+              Con el Correo: %s <br>
+              Nos manda el Mensaje: %s <br>
               </h2>
               """ % (Nombre, Correo, Mensaje)
         try:
@@ -44,7 +52,7 @@ def menu_inicio_contactanos():
             #print(e)
             print('Se envio')
         return redirect(url_for('menus.menu_inicio_contactanos_envio'))
-    return render_template("Contacto/inicio.html")
+    return render_template("Contacto/inicio.html", form=form)
 
 @menus.route('/contactanos/envio_exitoso')
 def menu_inicio_contactanos_envio():
@@ -52,51 +60,13 @@ def menu_inicio_contactanos_envio():
 
 @menus.route('/centro_de_ayuda', methods=['GET', 'POST'])
 def menu_inicio_centro_de_ayuda():
-    if request.method == 'POST':
-        Nombre = request.form['Nombre']
-        Correo = request.form['Correo']
-        Mensaje = request.form['Mensaje']
-        #ENVIO DE CORREO A NOTIFICACIONES
-        msg = Message(Nombre, sender='contacto@vtesta.info', recipients=['ivannaje15@gmail.com'])
-        msg.html = """
-              <h2>
-              El Cliente: %s </br>
-              Con el Correo: %s </br>
-              Nos manda el Mensaje: %s </br>
-              </h2>
-              """ % (Nombre, Correo, Mensaje)
-        try:
-             mail.send(msg)
-        except Exception as e:
-            # Print any error messages to stdout
-            #print(e)
-            print('Se envio')
-        return redirect(url_for('menus.menu_inicio_contactanos_envio'))
-    return render_template("Centro_ayuda/inicio.html")
+    form = ContactForm()
+    return render_template("Centro_ayuda/inicio.html", form=form)
 
 @menus.route('/desarrollo_personalizado', methods=['GET', 'POST'])
 def menu_inicio_desarrollo_personalizado():
-    if request.method == 'POST':
-        Nombre = request.form['Nombre']
-        Correo = request.form['Correo']
-        Mensaje = request.form['Mensaje']
-        #ENVIO DE CORREO A NOTIFICACIONES
-        msg = Message(Nombre, sender='contacto@vtesta.info', recipients=['ivannaje15@gmail.com'])
-        msg.html = """
-              <h2>
-              El Cliente: %s </br>
-              Con el Correo: %s </br>
-              Nos manda el Mensaje: %s </br>
-              </h2>
-              """ % (Nombre, Correo, Mensaje)
-        try:
-             mail.send(msg)
-        except Exception as e:
-            # Print any error messages to stdout
-            #print(e)
-            print('Se envio')
-        return redirect(url_for('menus.menu_inicio_contactanos_envio'))
-    return render_template("Desarrollo/inicio.html")
+    form = ContactForm()    
+    return render_template("Desarrollo/inicio.html", form=form)
 
 @menus.route('/terminos_y_condiciones')
 def menu_inicio_terminos_y_condiciones():

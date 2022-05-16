@@ -8,8 +8,8 @@
           <div class="col-xl-4 col-lg-5 col-md-6 d-flex flex-column mx-auto">
             <div class="card card-plain mt-8">
               <div class="card-header pb-0 text-left">
-                <h3 class="font-weight-bolder text-info text-gradient">Bienvenido</h3>
-                <p class="mb-0">Coloca tus credenciales para tener acceso.</p>
+                <h3 class="font-weight-bolder text-vtesta text-gradient"><b><i>Bienvenido</i></b></h3>
+                <p class="mb-0"><i>Coloca tus credenciales para tener acceso</i></p>
               </div>
               <div class="card-body">
                 {% for field, errors in form.errors.items() %}
@@ -28,7 +28,7 @@
                     {{form.password(class="form-control form-control-lg", placeholder="Contraseña")}}
                   </div>
                   <div class="text-center">
-                    {{form.submit(class="btn btn-lg bg-gradient-primary btn-lg w-100 mt-4 mb-0", value="Ingresar")}}
+                    {{form.submit(class="btn btn-lg bg-gradient-vtesta btn-lg w-100 mt-4 mb-0 text-white", value="Ingresar")}}
                   </div>
                 </form>
               </div>
@@ -36,7 +36,7 @@
           </div>
           <div class="col-md-6">
             <div class="oblique position-absolute top-0 h-100 d-md-block d-none me-n8">
-              <div class="oblique-image bg-cover position-absolute fixed-top ms-auto h-100 z-index-0 ms-n6" style="background-image:url('{{ url_for('static', filename='img/curved-images/curved-10.jpg')}}')"></div>
+              <div class="oblique-image bg-cover position-absolute fixed-top ms-auto h-100 z-index-0 ms-n6" style="background-image:url('{{ url_for('static', filename='img/curved-images/curved-8.jpg')}}')"></div>
             </div>
           </div>
         </div>
